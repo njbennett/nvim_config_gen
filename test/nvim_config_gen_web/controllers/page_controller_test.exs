@@ -8,6 +8,6 @@ defmodule NvimConfigGenWeb.PageControllerTest do
 
   test "GET /download", %{conn: conn} do
     conn = get(conn, ~p"/download")
-    assert html_response(conn, 200) =~ "Peace of mind from prototype to production"
+    assert text_response(conn, 200) =~ "bingo"
   end
 end

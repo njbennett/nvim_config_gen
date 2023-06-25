@@ -8,6 +8,6 @@ defmodule NvimConfigGenWeb.PageController do
   end
 
   def download(conn, _params) do
-    render(conn, :home, layout: false)
+    send_download(conn, {:binary, "bingo"}, filename: "bingo.txt")
   end
 end
