@@ -6,4 +6,8 @@ defmodule NvimConfigGenWeb.PageController do
     # so skip the default app layout.
     render(conn, :home, layout: false)
   end
+
+  def download(conn, _params) do
+    render(conn, :home, layout: false)
+  end
 end
