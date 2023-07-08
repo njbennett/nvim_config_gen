@@ -8,7 +8,7 @@ defmodule NvimConfigGenWeb.PageController do
   end
 
   def download(conn, _params) do
-    { :ok, contents } = File.read("./init.lua")
+    { :ok, contents } = File.read("./assets/init.lua")
     send_download(conn, {:binary, contents}, filename: "init.lua")
   end
 end
